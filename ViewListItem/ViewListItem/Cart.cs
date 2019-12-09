@@ -12,22 +12,15 @@ namespace ViewListItem
     using System;
     using System.Collections.Generic;
     
-    public partial class Mathang
+    public partial class Cart
     {
-        public Mathang()
-        {
-            this.GioHangs = new HashSet<GioHang>();
-            this.NhaSanXuats = new HashSet<NhaSanXuat>();
-        }
-    
         public int Id { get; set; }
-        public string Code { get; set; }
         public string Name { get; set; }
-        public string Produce { get; set; }
+        public int Amount { get; set; }
         public int Price { get; set; }
-        public Nullable<int> Remain { get; set; }
+        public int TotalPrice { get; set; }
+        public Nullable<int> Code_id { get; set; }
     
-        public virtual ICollection<GioHang> GioHangs { get; set; }
-        public virtual ICollection<NhaSanXuat> NhaSanXuats { get; set; }
+        public virtual Item Item { get; set; }
     }
 }

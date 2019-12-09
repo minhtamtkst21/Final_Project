@@ -5,11 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="14c41e4ef89746d7a129127baf609334" Name="Diagram1" ZoomLevel="65">
-        <EntityTypeShape EntityType="MyDataBaseSuperMarketModel.GioHang" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="MyDataBaseSuperMarketModel.Mathang" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="MyDataBaseSuperMarketModel.NhaSanXuat" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
-        <AssociationConnector Association="MyDataBaseSuperMarketModel.FK__GioHang__Code_id__182C9B23" ManuallyRouted="false" />
-        <AssociationConnector Association="MyDataBaseSuperMarketModel.FK__NhaSanXua__Code___15502E78" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MyDataBaseSuperMarketModel.Cart" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="MyDataBaseSuperMarketModel.Item" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="MyDataBaseSuperMarketModel.Producer" Width="1.5" PointX="0.75" PointY="1.375" />
+        <AssociationConnector Association="MyDataBaseSuperMarketModel.FK__Cart__Code_id__3C69FB99" />
+        <AssociationConnector Association="MyDataBaseSuperMarketModel.FK__Item__Producer__3D5E1FD2" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

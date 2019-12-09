@@ -11,6 +11,7 @@
     <AssemblyName>ViewListItem</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -68,25 +68,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Additem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Additem.Designer.cs">
-      <DependentUpon>Additem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GioHang.cs">
+    <Compile Include="Cart.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
-    <Compile Include="Management.cs" />
-    <Compile Include="Mathang.cs">
+    <Compile Include="Item.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="Item\AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\IndexItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\IndexItemForm.Designer.cs">
+      <DependentUpon>IndexItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemManagement.cs" />
     <Compile Include="Models.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -102,22 +102,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Models.edmx</DependentUpon>
     </Compile>
-    <Compile Include="NhaSanXuat.cs">
+    <Compile Include="Producer.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="Producers\ProducerManagement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Updateitem.cs">
+    <Compile Include="Item\UpdateItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Updateitem.Designer.cs">
-      <DependentUpon>Updateitem.cs</DependentUpon>
+    <Compile Include="Item\UpdateItem.Designer.cs">
+      <DependentUpon>UpdateItem.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Additem.resx">
-      <DependentUpon>Additem.cs</DependentUpon>
+    <EmbeddedResource Include="Item\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Item\IndexItemForm.resx">
+      <DependentUpon>IndexItemForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,8 +129,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Updateitem.resx">
-      <DependentUpon>Updateitem.cs</DependentUpon>
+    <EmbeddedResource Include="Item\UpdateItem.resx">
+      <DependentUpon>UpdateItem.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Models.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -163,15 +164,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MyDataBaseSuperMarket.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="MyDataBaseSuperMarket_log.ldf">
-      <DependentUpon>MyDataBaseSuperMarket.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +182,17 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDataBaseSuperMarket.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MyDataBaseSuperMarket_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cart\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

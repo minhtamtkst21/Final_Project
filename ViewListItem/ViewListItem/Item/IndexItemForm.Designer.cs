@@ -1,6 +1,6 @@
 ﻿namespace ViewListItem
 {
-    partial class Form1
+    partial class IndexItemForm
     {
         /// <summary>
         /// Required designer variable.
@@ -80,19 +80,19 @@
             // btnAdd
             // 
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(152, 22);
+            this.btnAdd.Size = new System.Drawing.Size(139, 22);
             this.btnAdd.Text = "Add Item";
             // 
             // btnUpdate
             // 
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(152, 22);
+            this.btnUpdate.Size = new System.Drawing.Size(139, 22);
             this.btnUpdate.Text = "Update Item";
             // 
             // btnDelete
             // 
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(152, 22);
+            this.btnDelete.Size = new System.Drawing.Size(139, 22);
             this.btnDelete.Text = "Delete Item";
             // 
             // viewItemToolStripMenuItem
@@ -108,19 +108,19 @@
             // btnViewAZ
             // 
             this.btnViewAZ.Name = "btnViewAZ";
-            this.btnViewAZ.Size = new System.Drawing.Size(152, 22);
+            this.btnViewAZ.Size = new System.Drawing.Size(114, 22);
             this.btnViewAZ.Text = "A-Z";
             // 
             // btnViewPrice
             // 
             this.btnViewPrice.Name = "btnViewPrice";
-            this.btnViewPrice.Size = new System.Drawing.Size(152, 22);
+            this.btnViewPrice.Size = new System.Drawing.Size(114, 22);
             this.btnViewPrice.Text = "Price";
             // 
             // btnViewRemain
             // 
             this.btnViewRemain.Name = "btnViewRemain";
-            this.btnViewRemain.Size = new System.Drawing.Size(152, 22);
+            this.btnViewRemain.Size = new System.Drawing.Size(114, 22);
             this.btnViewRemain.Text = "Remain";
             // 
             // btnFind
@@ -139,7 +139,7 @@
             this.txtFind.Size = new System.Drawing.Size(69, 20);
             this.txtFind.TabIndex = 3;
             // 
-            // Form1
+            // IndexItemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -149,8 +149,8 @@
             this.Controls.Add(this.grdViewItem);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "IndexItemForm";
+            this.Text = "View Item From";
             ((System.ComponentModel.ISupportInitialize)(this.grdViewItem)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

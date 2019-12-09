@@ -12,12 +12,21 @@ namespace ViewListItem
     using System;
     using System.Collections.Generic;
     
-    public partial class NhaSanXuat
+    public partial class Item
     {
-        public int id { get; set; }
-        public Nullable<int> Code_id { get; set; }
-        public string Name { get; set; }
+        public Item()
+        {
+            this.Carts = new HashSet<Cart>();
+        }
     
-        public virtual Mathang Mathang { get; set; }
+        public int Id { get; set; }
+        public string Code { get; set; }
+        public string Name { get; set; }
+        public int Producer { get; set; }
+        public int Price { get; set; }
+        public Nullable<int> Amount { get; set; }
+    
+        public virtual ICollection<Cart> Carts { get; set; }
+        public virtual Producer Producer1 { get; set; }
     }
 }

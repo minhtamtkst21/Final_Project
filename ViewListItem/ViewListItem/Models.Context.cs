@@ -25,8 +25,8 @@ namespace ViewListItem
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<GioHang> GioHangs { get; set; }
-        public virtual DbSet<Mathang> Mathangs { get; set; }
-        public virtual DbSet<NhaSanXuat> NhaSanXuats { get; set; }
+        public virtual DbSet<Cart> Carts { get; set; }
+        public virtual DbSet<Item> Items { get; set; }
+        public virtual DbSet<Producer> Producers { get; set; }
     }
 }
