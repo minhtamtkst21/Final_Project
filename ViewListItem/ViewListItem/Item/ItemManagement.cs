@@ -57,6 +57,23 @@ namespace ViewListItem
                             orderby name.Name
                             select name;
         }
-
+        public void ViewPrice()
+        {
+            var item = new Item();
+            var db = new MyDataBaseSuperMarketEntities();
+            Item[] list = db.Items.ToArray();
+            var orderByPrice = from price in list
+                               orderby price.Price
+                               select price;
+        }
+        public void ViewAmount()
+        {
+            var item = new Item();
+            var db = new MyDataBaseSuperMarketEntities();
+            Item[] list = db.Items.ToArray();
+            var orderByAmount = from amount in list
+                                orderby amount.Amount
+                                select amount;
+        }
     }
 }

@@ -37,7 +37,7 @@
             this.viewItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnViewAZ = new System.Windows.Forms.ToolStripMenuItem();
             this.btnViewPrice = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnViewRemain = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnViewAmount = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFind = new System.Windows.Forms.Button();
             this.txtFind = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdViewItem)).BeginInit();
@@ -100,7 +100,7 @@
             this.viewItemToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnViewAZ,
             this.btnViewPrice,
-            this.btnViewRemain});
+            this.btnViewAmount});
             this.viewItemToolStripMenuItem.Name = "viewItemToolStripMenuItem";
             this.viewItemToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.viewItemToolStripMenuItem.Text = "View Item";
@@ -108,20 +108,20 @@
             // btnViewAZ
             // 
             this.btnViewAZ.Name = "btnViewAZ";
-            this.btnViewAZ.Size = new System.Drawing.Size(114, 22);
+            this.btnViewAZ.Size = new System.Drawing.Size(152, 22);
             this.btnViewAZ.Text = "A-Z";
             // 
             // btnViewPrice
             // 
             this.btnViewPrice.Name = "btnViewPrice";
-            this.btnViewPrice.Size = new System.Drawing.Size(114, 22);
+            this.btnViewPrice.Size = new System.Drawing.Size(152, 22);
             this.btnViewPrice.Text = "Price";
             // 
-            // btnViewRemain
+            // btnViewAmount
             // 
-            this.btnViewRemain.Name = "btnViewRemain";
-            this.btnViewRemain.Size = new System.Drawing.Size(114, 22);
-            this.btnViewRemain.Text = "Remain";
+            this.btnViewAmount.Name = "btnViewAmount";
+            this.btnViewAmount.Size = new System.Drawing.Size(152, 22);
+            this.btnViewAmount.Text = "Amount";
             // 
             // btnFind
             // 
@@ -170,7 +170,7 @@
         private System.Windows.Forms.ToolStripMenuItem viewItemToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btnViewAZ;
         private System.Windows.Forms.ToolStripMenuItem btnViewPrice;
-        private System.Windows.Forms.ToolStripMenuItem btnViewRemain;
+        private System.Windows.Forms.ToolStripMenuItem btnViewAmount;
         private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.TextBox txtFind;
     }
